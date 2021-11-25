@@ -23,7 +23,7 @@ public class main {
 		}
 		List<String> urlsList = new ArrayList<String>();
 		
-		WebSearchEngine.crawUrls(source_URL, 2, urlsList);
+		WebSearchEngine.crawUrls(source_URL, 3, urlsList);
 		
 //		System.out.println(urlsList.size());
 		for (String url : urlsList) {
@@ -36,8 +36,8 @@ public class main {
 				if (title.contains("|")) {
 					title = title.split("\\|")[0];
 				}
-//				System.out.println(title);
-//				System.out.println(text);
+				System.out.println(title);
+				System.out.println(text);
 				PrintWriter out = new PrintWriter("./Text_Files/" + title + ".txt");
 				out.println(text);
 				out.close();
@@ -46,6 +46,15 @@ public class main {
 				continue;
 			}
 		}
+		System.out.println("\nEnter the word to Search: ");
+		String toSearch = sc.nextLine();
+		double start, end, diff;
+		start = end = diff = 0;
+		start = System.currentTimeMillis();
+		TST_Implementation.getAllMatches(toSearch);
+		end  = System.currentTimeMillis();
+		diff = end - start;
+		System.out.println("\nTotal Time taken for TST Search: " + diff);
 		// Shivam and Ami
 
 		
