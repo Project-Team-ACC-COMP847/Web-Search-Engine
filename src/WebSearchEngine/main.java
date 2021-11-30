@@ -24,7 +24,7 @@ public class main {
 		}
 		List<String> urlsList = new ArrayList<String>();
 		
-		WebSearchEngine.crawUrls(source_URL, 3, urlsList);
+		WebSearchEngine.crawUrls(source_URL, 20, urlsList);
 		
 //		System.out.println(urlsList.size());
 		for (String url : urlsList) {
@@ -47,6 +47,7 @@ public class main {
 				continue;
 			}
 		}
+		// TST search starts here.
 		System.out.println("\nEnter the word to Search: ");
 		String toSearch = sc.nextLine();
 		System.out.println("\n\nSearching Via TST: \n");
@@ -58,7 +59,7 @@ public class main {
 		diff = end - start;
 		System.out.println("\nTotal Time taken for TST Search: " + diff + "ms");
 		
-
+		// Brute Force Starts here.
 		System.out.println("\n\n\nSearching Via Brute Force: \n\n");
 		start = System.currentTimeMillis();
 		BruteForce_PageRanking.search(toSearch);
@@ -66,13 +67,13 @@ public class main {
 		diff = end - start;
 		System.out.println("\nTotal Time taken for Brute Force: " + diff + "ms");
 		
-		//Ami
-		
-		String str= wordsuggestion.suggestionfunction("trein");
-		System.out.print(str);
-		
+		// Spell Checker starts here.
+		System.out.println("\nEnter a word For Spell Check :");
+		String word = sc.next();
+		String str= wordsuggestion.suggestionfunction(word);
 
-		
+		System.out.print("\nThe word is not correctly entered by the user and the correct word is "+ str);
+
 	}
 
 }
