@@ -11,7 +11,7 @@ import java.util.Map;
 public class BruteForce_PageRanking {
 	static Hashtable <String, Integer> hashTable = new Hashtable <>();
 	public static void main(String[] args) {
-	    search("a");
+//	    search("a");
 	}
 	
 	public static int bruteForceSearch(String pat, String txt) {
