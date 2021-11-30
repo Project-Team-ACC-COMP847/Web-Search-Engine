@@ -61,7 +61,7 @@ public class main {
 
 		System.out.println("\n\n\nSearching Via Brute Force: \n\n");
 		start = System.currentTimeMillis();
-		BruteForceSearch.search(toSearch);
+		BruteForce_PageRanking.search(toSearch);
 		end  = System.currentTimeMillis();
 		diff = end - start;
 		System.out.println("\nTotal Time taken for Brute Force: " + diff + "ms");
