@@ -55,16 +55,16 @@ public class main {
 		TST_Implementation.getAllMatches(toSearch);
 		end  = System.currentTimeMillis();
 		diff = end - start;
-		System.out.println("\nTotal Time taken for TST Search: " + diff);
+		System.out.println("\nTotal Time taken for TST Search: " + diff + "ms");
 		
 
-		System.out.println("\n\n\nSearching Via KMP: \n\n");
+		System.out.println("\n\n\nSearching Via Brute Force: \n\n");
 		start = System.currentTimeMillis();
-		Task1_KMP.search(toSearch);
+		BruteForceSearch.search(toSearch);
 		end  = System.currentTimeMillis();
 		diff = end - start;
-		System.out.println("\nTotal Time taken for KMP Search: " + diff);
-		// Shivam and Ami
+		System.out.println("\nTotal Time taken for Brute Force: " + diff + "ms");
+		// Ami
 
 		
 	}
