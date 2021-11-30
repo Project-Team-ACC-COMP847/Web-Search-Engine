@@ -8,7 +8,7 @@ public static String suggestionfunction(String word) throws IOException
 	
 	{
 		
-		String FileName = ("src/spell/dictionary.txt");
+		String FileName = ("./src/WebSearchEngine/dictionary.txt");
 		
 		String Input = word;
 		
