@@ -1,5 +1,6 @@
 package WebSearchEngine;
 
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +11,7 @@ import org.jsoup.nodes.Document;
 
 public class main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		System.out.println("Enter the website URL (You can type No): ");
 		Scanner sc=new Scanner(System.in);
@@ -64,7 +65,12 @@ public class main {
 		end  = System.currentTimeMillis();
 		diff = end - start;
 		System.out.println("\nTotal Time taken for Brute Force: " + diff + "ms");
-		// Ami
+		
+		//Ami
+		
+		String str= wordsuggestion.suggestionfunction("trein");
+		System.out.print(str);
+		
 
 		
 	}
