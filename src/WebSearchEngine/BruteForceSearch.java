@@ -25,6 +25,7 @@ public class BruteForceSearch {
 	
 	public static void search(String toSearch) {
 	   File[] files = new File("./Text_Files/").listFiles();
+		int count = 0;
 		for (File file : files) {
 			
 		    if (file.isFile()) {
@@ -45,9 +46,8 @@ public class BruteForceSearch {
 					   }
 				   } while(input.hasNextLine());
 				   input.close();
-		    	
 		    }
 		}
+		StdOut.println("No of times the word is repeated : " + count);
 	}
-
 }
