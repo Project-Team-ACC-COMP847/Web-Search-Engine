@@ -1,6 +1,6 @@
 # Web-Search-Engine
 
-How to run the model ----- 
+How to run the project ----- 
 
       -> Git pull https://github.com/Project-Team-ACC-COMP847/Web-Search-Engine/
 
