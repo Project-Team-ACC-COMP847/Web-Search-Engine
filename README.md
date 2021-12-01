@@ -10,6 +10,8 @@ How to run the model -----
 
 GitHub Link --- https://github.com/Project-Team-ACC-COMP847/Web-Search-Engine/
 
+Output in Console --- [Output in a Text File](Web%20Search%20Engine%20Output.txt)
+
 Presentation Video - 
 
 [![Presentation](https://img.youtube.com/vi/8yhoVgFLeGs/0.jpg)](https://www.youtube.com/watch?v=8yhoVgFLeGs)
